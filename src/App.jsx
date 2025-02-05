@@ -1,12 +1,14 @@
 import { useState } from 'react'
-import './App.css'
+import Register from './pages/Register/register.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div></div>
+      <div>
+      <Route path="/registro" element={<Register />} />
+      </div>
     </>
   )
 }
