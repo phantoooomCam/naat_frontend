@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import './registro.css';
-import NAATLogo from './assets/NAAT_1.png'; // Asegúrate de tener la imagen en esta ruta
+import './registro.css';// Asegúrate de tener la imagen en esta ruta
 
 const Register = () => {
   useEffect(() => {
@@ -40,7 +39,7 @@ const Register = () => {
       <div className="right">
         <div className="form-container">
           <a href="/">
-            <img src={NAATLogo} alt="Logo de NA'AT" />
+            <img src="./src/assets/NAAT_1.png" alt="Logo de NA'AT" />
           </a>
           <h2>Registro</h2>
           <form onSubmit={(e) => e.preventDefault()}>
