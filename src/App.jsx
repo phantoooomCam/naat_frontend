@@ -1,19 +1,14 @@
-import { useState } from 'react'
-import Register from './pages/Register/register.jsx';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Register from "./pages/Register/Register"; // Ruta correcta
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-      <Route path="/registro" element={<Register />} />
-      </div>
-    </>
-    
-  )
+    <Router>
+      <Routes>
+        <Route path="/registro" element={<Register />} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default App
 
 
